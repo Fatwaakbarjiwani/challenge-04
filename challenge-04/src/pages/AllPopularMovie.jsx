@@ -1,4 +1,5 @@
 import PropType from "prop-types"
+import { Link } from "react-router-dom";
 export default function AllPopularMovie({ popularMovies }) {
   return (
     <>
@@ -7,7 +8,7 @@ export default function AllPopularMovie({ popularMovies }) {
           <h1>Popular Movie</h1>
           {popularMovies.map((movie) => (
             <div className="col-3 my-2" key={movie.id}>
-              <a href={`/DetailMovie/${movie.id}`}>
+              <Link to={`/DetailMovie/${movie.id}`}>
                 <img
                   id="card"
                   className="w-100 h-100 rounded"
@@ -16,7 +17,7 @@ export default function AllPopularMovie({ popularMovies }) {
                   }`}
                   alt="image.png"
                 />
-              </a>
+              </Link>
             </div>
           ))}
         </div>

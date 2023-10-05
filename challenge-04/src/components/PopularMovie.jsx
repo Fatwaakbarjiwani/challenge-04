@@ -16,7 +16,7 @@ export default function PopularMovie({ popularMovies }) {
       </div>
       <div className="row p-3" id="listMovie">
         <div className="col-3">
-          <a href={`/DetailMovie/${popularMovies[0].id}`}>
+          <Link to={`/DetailMovie/${popularMovies[0].id}`}>
             <img
               className="w-100 h-100 rounded"
               src={`${import.meta.env.VITE_API_IMG_CARD}${
@@ -24,10 +24,10 @@ export default function PopularMovie({ popularMovies }) {
               }`}
               alt="image.png"
             />
-          </a>
+          </Link>
         </div>
         <div className="col-3">
-          <a href={`/DetailMovie/${popularMovies[1].id}`}>
+          <Link to={`/DetailMovie/${popularMovies[1].id}`}>
             <img
               className="w-100 h-100 rounded"
               src={`${import.meta.env.VITE_API_IMG_CARD}${
@@ -35,10 +35,10 @@ export default function PopularMovie({ popularMovies }) {
               }`}
               alt="image.png"
             />
-          </a>
+          </Link>
         </div>
         <div className="col-3">
-          <a href={`/DetailMovie/${popularMovies[2].id}`}>
+          <Link to={`/DetailMovie/${popularMovies[2].id}`}>
             <img
               className="w-100 h-100 rounded"
               src={`${import.meta.env.VITE_API_IMG_CARD}${
@@ -46,10 +46,10 @@ export default function PopularMovie({ popularMovies }) {
               }`}
               alt="image.png"
             />
-          </a>
+          </Link>
         </div>
         <div className="col-3">
-          <a href={`/DetailMovie/${popularMovies[3].id}`}>
+          <Link to={`/DetailMovie/${popularMovies[3].id}`}>
             <img
               className="w-100 h-100 rounded"
               src={`${import.meta.env.VITE_API_IMG_CARD}${
@@ -57,7 +57,7 @@ export default function PopularMovie({ popularMovies }) {
               }`}
               alt="image.png"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </>
