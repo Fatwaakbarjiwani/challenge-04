@@ -124,7 +124,7 @@ function App() {
             />
           }
         />
-        <Route path="/PopularMovie" element={<AllPopularMovie popularMovies={popularMovies}/>} />
+        <Route path="/popularMovie" element={<AllPopularMovie popularMovies={popularMovies}/>} />
       </Routes>
     </BrowserRouter>
   );
