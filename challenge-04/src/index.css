@@ -1,0 +1,86 @@
+img {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+#nav {
+  display: flex;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#search {
+  margin-top: 50pt;
+}
+#Title {
+  color: red;
+  font-weight: 700;
+  font-size: 35px;
+}
+#input {
+  border-color: red;
+  background-color: rgba(33, 31, 31, 0.412);
+  color: aliceblue;
+}
+#titleMovie {
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-weight: 700;
+  font-size: 35px;
+  margin: 2px;
+}
+#overviewMovie {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  text-align: left;
+  font-size: 15px;
+  margin: 2px;
+  text-overflow: unset;
+}
+#information {
+  display: flex;
+  flex-direction: column;
+  min-height: 250pt;
+  margin-left: -18%;
+}
+#informationDetail {
+  display: flex;
+  flex-direction: column;
+  min-height: 270pt;
+  margin-left: -20%;
+}
+#card {
+  border-radius: 5%;
+}
+#popularMovies {
+  margin-top: 50pt;
+}
+#footer {
+  background-color: rgba(0, 0, 0, 0.636);
+  color: aliceblue;
+  position: absolute;
+  min-width: 100%;
+  min-height: 40vh;
+  color: white;
+  text-align: center;
+}
+#listMovie {
+  max-width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+#head {
+  max-width: 100%;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 5%;
+}
