@@ -1,16 +1,17 @@
 import PropType from "prop-types";
+import { Link } from "react-router-dom";
 export default function PopularMovie({ popularMovies }) {
   return (
     <>
       <div className="row" id="head">
         <div className="col-12 d-flex justify-content-between">
           <h2>Popular Movie</h2>
-          <a
-            href="/PopularMovie"
+          <Link
+            to="/popularMovie"
             className="my-3 link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
           >
             See All Movie
-          </a>
+          </Link>
         </div>
       </div>
       <div className="row p-3" id="listMovie">
