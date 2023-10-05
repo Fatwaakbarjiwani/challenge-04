@@ -50,9 +50,7 @@ function App() {
   };
   const getSlideMovies = async () => {
     const response = await axios.get(
-      `${
-        import.meta.env.VITE_API_URL
-      }/3/search/movie?include_adult=false&language=en-US&page=1&query=Doctor Strange`,
+      `${import.meta.env.VITE_API_URL}/3/movie/popular?language=en-US&page=2`,
       {
         headers: {
           Authorization: `Bearer ${import.meta.env.VITE_API_AUTH_TOKEN}`,

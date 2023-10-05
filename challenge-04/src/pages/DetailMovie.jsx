@@ -40,7 +40,7 @@ function DetailMovies() {
               </h1>
               <div className="row px-3">
                 Genre Movie :
-                <div className="col-md-3">
+                <div className="col-md-7">
                   <div className="row">
                     {genre.map((genre) => (
                       <div className="col-3" id="genre" key={genre.id}>
@@ -50,7 +50,7 @@ function DetailMovies() {
                   </div>
                 </div>
               </div>
-              <p id="overviewMovie" className="col-md-12">
+              <p id="overviewMovie" className="col-md-8">
                 {detail.overview}
               </p>
               <button className="my-3 btn btn-danger col-3">Watch Trailler</button>
