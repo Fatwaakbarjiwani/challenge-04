@@ -84,3 +84,6 @@ img {
   display: flex;
   margin-top: 5%;
 }
+#watchButton{
+  border-radius: 25px;
+}

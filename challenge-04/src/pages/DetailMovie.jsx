@@ -53,7 +53,7 @@ function DetailMovies() {
               <p id="overviewMovie" className="col-md-8">
                 {detail.overview}
               </p>
-              <button className="my-3 btn btn-danger col-3">Watch Trailler</button>
+              <button className="my-3 btn btn-danger col-3" id="watchButton">Watch Trailler</button>
             </div>
           </Carousel.Caption>
         </div>
