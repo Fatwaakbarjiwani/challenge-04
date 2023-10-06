@@ -6,6 +6,7 @@ import DetailMovie from "./pages/DetailMovie";
 import axios from "axios";
 import Search from "./pages/Search";
 import AllPopularMovie from "./pages/AllPopularMovie";
+import Footer from "./components/footer"
 
 function App() {
   const [search, setSearch] = useState("");
@@ -124,6 +125,7 @@ function App() {
         />
         <Route path="/popularMovie" element={<AllPopularMovie popularMovies={popularMovies}/>} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }

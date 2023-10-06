@@ -1,6 +1,5 @@
 import PopularMovie from "../components/PopularMovie";
 import SlideMovie from "../components/SlideMovie";
-import Footer from "../components/footer";
 import PropType from "prop-types"
 
 const Home = ({ slideMovies,popularMovies}) => {
@@ -8,7 +7,6 @@ const Home = ({ slideMovies,popularMovies}) => {
     <>
       <SlideMovie slideMovies={slideMovies} />
       <PopularMovie popularMovies={popularMovies}/>
-      <Footer/>
     </>
   );
 };
