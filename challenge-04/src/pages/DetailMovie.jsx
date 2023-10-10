@@ -38,22 +38,21 @@ function DetailMovies() {
               <h1 id="titleMovie" className="col-md-12">
                 {detail.title}
               </h1>
-              <div className="row px-3">
-                Genre Movie :
-                <div className="col-md-7">
-                  <div className="row">
-                    {genre.map((genre) => (
-                      <div className="col-3" id="genre" key={genre.id}>
-                        <p>{genre.name},</p>
-                      </div>
-                    ))}
-                  </div>
+              <div className="d-flex p-3 justify-content-start">
+                <div>Genre Movie :</div>
+                <div className="d-flex justify-content-start">
+                  {genre.map((genre) => (
+                    <span key={genre.id}>{genre.name},</span>
+                  ))}
                 </div>
               </div>
+
               <p id="overviewMovie" className="col-md-8">
                 {detail.overview}
               </p>
-              <button className="my-3 btn btn-danger col-3" id="watchButton">Watch Trailler</button>
+              <button className="my-3 btn btn-danger col-3" id="watchButton">
+                Watch Trailler
+              </button>
             </div>
           </Carousel.Caption>
         </div>
