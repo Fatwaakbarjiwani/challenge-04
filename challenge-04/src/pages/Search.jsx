@@ -8,7 +8,7 @@ const Search = ({ search, searchMovies }) => {
         <div className="row p-2" id="listMovie">
           {searchMovies.map((movie) => (
             <div className="col-3 my-2" key={movie.id}>
-              <Link to={`/DetailMovie/${movie.id}`}>
+              <Link to = {`/DetailMovie/${movie.id}`}>
                 <img
                   id="card"
                   className="w-100 h-100 rounded"
