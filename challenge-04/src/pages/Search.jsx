@@ -1,4 +1,5 @@
 import PropType from "prop-types";
+import { Link } from "react-router-dom";
 const Search = ({ search, searchMovies }) => {
   return (
     <div id="search">
@@ -7,7 +8,7 @@ const Search = ({ search, searchMovies }) => {
         <div className="row p-2" id="listMovie">
           {searchMovies.map((movie) => (
             <div className="col-3 my-2" key={movie.id}>
-              <a href={`/DetailMovie/${movie.id}`}>
+              <Link to={`/DetailMovie/${movie.id}`}>
                 <img
                   id="card"
                   className="w-100 h-100 rounded"
@@ -16,7 +17,7 @@ const Search = ({ search, searchMovies }) => {
                   }`}
                   alt="image.png"
                 />
-              </a>
+              </Link>
             </div>
           ))}
         </div>
